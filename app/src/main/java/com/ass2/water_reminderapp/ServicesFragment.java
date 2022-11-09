@@ -10,6 +10,7 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -19,7 +20,6 @@ import android.widget.TextView;
  * create an instance of this fragment.
  */
 public class ServicesFragment extends Fragment {
-
 
     ImageView notifyimage, sideeffectsimage, benefitsimage, graphimage, progressimage, servingsimage, bedtimemodeimage, historyimage;
     TextView notifytext, sideeffectstext, benefitstext, graphtext, progresstext, servingstext, bedtimemodetext, historytext;
@@ -93,6 +93,7 @@ public class ServicesFragment extends Fragment {
         bedtimemodetext = view.findViewById(R.id.bedtimemodetext);
         historyimage = view.findViewById(R.id.historyimage);
         historytext = view.findViewById(R.id.historytext);
+
 
 
         notifyimage.setOnClickListener(new View.OnClickListener() {

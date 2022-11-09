@@ -57,7 +57,7 @@
             android:layout_height="wrap_content"
             android:text="Verify"
             android:layout_marginTop="15dp"
-            android:background="@color/yellow"
+            android:background="@drawable/round_btn"
             android:textColor="@color/white"/>
 
 
@@ -67,13 +67,14 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Verify"
+            android:visibility="invisible"
             android:layout_marginTop="15dp" />
 
 
         <Button
             android:id="@+id/back"
-            android:layout_width="60dp"
-            android:layout_height="60dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
             android:layout_below="@+id/progressbar"
             android:layout_centerInParent="true"
             android:layout_marginTop="50dp"

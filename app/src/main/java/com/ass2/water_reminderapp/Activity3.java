@@ -16,26 +16,21 @@ public class Activity3 extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        //setContentView(R.layout.activity_3);
         binding = Activity3Binding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
         replaceFragment(new HomeFragment());
 
         binding.bottomNavigationView.setOnItemSelectedListener(item -> {
 
-            switch (item.getItemId()) {
-                case R.id.home:
-                    replaceFragment(new HomeFragment());
-                    break;
+            if (item.getItemId() == R.id.home)
+                replaceFragment(new HomeFragment());
 
-                case R.id.services:
-                    replaceFragment(new ServicesFragment());
-                    break;
+            else if (item.getItemId() == R.id.services)
+                replaceFragment(new ServicesFragment());
 
-                case R.id.settings:
-                    replaceFragment(new SettingsFragment());
-                    break;
-            }
+            else if (item.getItemId() == R.id.settings)
+                replaceFragment(new SettingsFragment());
+
 
             return true;
 
