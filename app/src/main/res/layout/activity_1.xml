@@ -73,24 +73,28 @@
             android:layout_height="wrap_content" />
 
 
-        <Button
-            android:id="@+id/google_signIn"
-            android:fontFamily="@font/antic"
+        <EditText
+            android:layout_marginTop="15dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/or"
-            android:layout_marginTop="10dp"
-            android:background="@drawable/round_btn"
-            android:drawableLeft="@drawable/google"
-            android:text="Continue with Google"
-            android:textAllCaps="false"
-            tools:ignore="TextContrastCheck" />
+            android:hint="Enter Username"
+            android:id="@+id/username"/>
+
+        <EditText
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/username"
+            android:hint="Enter Password"
+            android:id="@+id/password"/>
+
 
 
         <TextView
             android:id="@+id/conclusiontext"
             android:fontFamily="@font/antic"
-            android:layout_below="@+id/google_signIn"
+            android:layout_below="@+id/password"
             android:text="By proceeding, you consent to use the Water Remider android application authentically."
             android:layout_marginTop="30dp"
             android:layout_width="match_parent"

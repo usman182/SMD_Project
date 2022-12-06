@@ -33,7 +33,7 @@ public class PushNotifications extends AppCompatActivity {
         NotificationCompat.Builder builder = new NotificationCompat.Builder(this, "myCh")
                 .setSmallIcon(android.R.drawable.stat_notify_sync)
                 .setContentTitle("First Notification")
-                .setContentText("This is the Body of message");
+                .setContentText("This is the Body of message Write the body of the message here");
 
         notification = builder.build();
 
